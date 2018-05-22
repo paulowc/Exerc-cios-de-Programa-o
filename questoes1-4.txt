@@ -1,0 +1,62 @@
+1. Crie 3 variáveis com as idades dos seus melhores amigos e/ou familiares. Algo como:
+
+int idadeJoao = 10;
+int idadeMaria = 25;
+
+Em seguida, pegue essas 3 idades e calcule a média delas. Exiba o resultado
+
+2. O que acontece com o código abaixo?
+
+int pi = 3.14;
+
+3. Execute o trecho de código a seguir. O que acontece com ele?
+
+double pi = 3.14;
+int piQuebrado = (int)pi;
+
+Repare o (int) . Estamos "forçando" a conversão do double para um inteiro.
+Qual o valor de piQuebrado nesse caso?
+
+4. (Opcional) No colegial, aprendemos a resolver equações de segundo grau usando a fórmula de
+Bhaskara. A fórmula é assim:
+
+delta = b*b - 4*a*c;
+a1 = (-b + raiz(delta)) / (2 * a);
+a2 = (-b - raiz(delta)) / (2 * a);
+
+Crie um programa com três variáveis inteiras, a, b, c , com quaisquer valores. Depois crie 3
+variáveis double, delta, a1, a2 , com a fórmula anterior.
+Imprima a1 e a2
+Dica: Procure mais sobre a biblioteca Math para tirar a raiz quadrada. Não se esqueça que não podemos calcular a raiz quadrada de números negativos.
+
+
+Resolução
+1) 
+//Inicializando as variáveis e atribuindo valores.
+int idadeGabriel = 23;
+int idadeArthur = 26;
+int idadeAndressa = 24;
+
+//fazendo processamento da média.
+
+int idadeMedia = (idadeGabriel+idadeArthur+idadeAndressa)/3 ;
+
+// A variavel idadeMedia só contêm a parte inteira da média , mesemo se ela fosse do tipo real.
+
+double idadeMediaReal = (idadeGabriel+idadeArthur+idadeAndressa)/3 ;
+
+/*O resultado séria igual o da média anterior, unica diferenã séria o .0
+Mas como eu faço para acerta a média, e pq isso está acontecendo?
+Quando você faz um divisão com dois numeros reais no nosso exemplo soma das idades e 3, o compilador entende que queremos um número inteiro como resultado. A partir dessa explicação, o que temos que fazer e colocar um numero real na divisão, o escolhido será o 3 que será 3.0 . Veja como ficará.
+*/
+
+double idadeMediaAgoraVai = (idadeGabriel+idadeArthur+idadeAndressa)/3.0 ;
+
+/*
+Veja que aqui o que eu fiz criar um variavel do tipo real, para alocar o valor real do processamento, e no processamento para conseguir de voltar um valor real, utilizei o divisão como número real -> 3.0 em vez de 3 .
+
+
+
+
+
+
